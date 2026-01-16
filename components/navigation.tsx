@@ -40,8 +40,8 @@ export default function Navigation({ themeToggle, isDark }: NavigationProps) {
           <div className="flex-shrink-0">
             <Link href="/">
               <span className="text-2xl font-bold tracking-tight">
-                <span className="text-foreground">ETech</span>
-                <span className="text-accent">Expertz</span>
+                <span className="text-foreground">OutSource</span>
+                <span className="text-accent">TechAutomations</span>
               </span>
             </Link>
           </div>
