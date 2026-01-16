@@ -17,7 +17,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-primary text-primary-foreground py-16">
+    <footer className="relative bg-primary text-primary-foreground py-16 texture-escheresque">
       <div className="absolute inset-0 texture-overlay opacity-10" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,9 +26,9 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Link href="/">
-                <span className="text-2xl font-bold">
-                  <span>ETech</span>
-                  <span className="text-accent">Expertz</span>
+                <span className="text-2xl font-bold flex flex-col leading-6">
+                  <span>OutSource</span>
+                  <span className="text-accent">TechAutomations</span>
                 </span>
               </Link>
             </div>

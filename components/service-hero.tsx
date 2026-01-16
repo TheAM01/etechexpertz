@@ -11,7 +11,7 @@ interface ServiceHeroProps {
 export default function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
     return (
         <section className="relative min-h-[70vh] flex items-center justify-center pt-32 overflow-hidden">
-            <div className="absolute inset-0 texture-overlay" />
+            <div className="absolute inset-0 texture-cartographer" />
 
             <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
                 <motion.p

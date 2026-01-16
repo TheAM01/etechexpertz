@@ -164,6 +164,15 @@ html {
 .texture-cartographer {
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
+.texture-axiom {
+  background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+
+.texture-escheresque {
+  background-image: url("https://www.transparenttextures.com/patterns/my-little-plaid-dark.png");
+  /* background-color: oklch(0.52 0.19 12.5); */
+  /* background-blend-mode: multiply; */
+}
 
 
 .texture-notebook {
