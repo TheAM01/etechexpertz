@@ -9,20 +9,25 @@ import { motion } from "framer-motion"
 import { ArrowRight, AlertCircle } from "lucide-react"
 
 export default function AccountReinstatement() {
-    const [isDark, setIsDark] = useState(false)
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
         setIsDark(prefersDark)
+        // Apply the class immediately
+        if (prefersDark) {
+            document.documentElement.classList.add("dark")
+        } else {
+            document.documentElement.classList.remove("dark")
+        }
     }, [])
 
     const toggleTheme = () => {
         setIsDark(!isDark)
-        const html = document.documentElement
         if (!isDark) {
-            html.classList.add("dark")
+            document.documentElement.classList.add("dark")
         } else {
-            html.classList.remove("dark")
+            document.documentElement.classList.remove("dark")
         }
     }
 
