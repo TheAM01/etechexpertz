@@ -16,7 +16,6 @@ export default function Navigation({ themeToggle, isDark }: NavigationProps) {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "Done For You", href: "#services" },
     { label: "Success Stories", href: "#success" },
     { label: "Contact", href: "/contact" },
   ]
