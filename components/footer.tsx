@@ -1,9 +1,21 @@
 "use client"
 
-import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram, TicketIcon as Tiktok } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
+  const serviceLinks = [
+    { label: "Amazon Wholesale FBA", href: "/services/amazon-wholesale-fba" },
+    { label: "Shopify Dropshipping", href: "/services/shopify-dropshipping" },
+    { label: "Facebook Marketplace", href: "/services/facebook-marketplace" },
+    { label: "Walmart Store Management", href: "/services/walmart-automation" },
+    { label: "eBay Store Management", href: "/services/ebay-management" },
+    { label: "Virtual Assistants", href: "/services/virtual-assistants" },
+    { label: "Account Reinstatement", href: "/services/account-reinstatement" },
+    { label: "Private Label", href: "/services/etech-private-label" },
+    { label: "TikTok Shop", href: "/services/tiktok-shop" },
+  ]
+
   return (
     <footer className="relative bg-primary text-primary-foreground py-16">
       <div className="absolute inset-0 texture-overlay opacity-10" />
@@ -13,10 +25,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="mb-4">
-              <span className="text-2xl font-bold">
-                <span>ETech</span>
-                <span className="text-accent">Expertz</span>
-              </span>
+              <Link href="/">
+                <span className="text-2xl font-bold">
+                  <span>ETech</span>
+                  <span className="text-accent">Expertz</span>
+                </span>
+              </Link>
             </div>
             <p className="text-primary-foreground/60 text-sm leading-relaxed">
               Transforming e-commerce businesses into profitable powerhouses with strategic excellence.
@@ -28,52 +42,38 @@ export default function Footer() {
             <h3 className="font-bold mb-4 text-lg">Company</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li>
-                <Link href="#home" className="hover:text-accent transition-colors">
+                <Link href="/" className="hover:text-accent transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="hover:text-accent transition-colors">
+                <Link href="/about" className="hover:text-accent transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="hover:text-accent transition-colors">
-                  Services
+                  Done For You
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="hover:text-accent transition-colors">
+                <Link href="/contact" className="hover:text-accent transition-colors">
                   Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="font-bold mb-4 text-lg">Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Product Hunting
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Marketing Strategy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Account Management
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-accent transition-colors">
-                  Order Fulfillment
-                </a>
-              </li>
+              {serviceLinks.map((service) => (
+                <li key={service.label}>
+                  <Link href={service.href} className="hover:text-accent transition-colors">
+                    {service.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -117,6 +117,9 @@ export default function Footer() {
               </a>
               <a href="#" className="p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors">
                 <Instagram size={20} className="text-primary-foreground/60 hover:text-accent" />
+              </a>
+              <a href="#" className="p-2 hover:bg-primary-foreground/10 rounded-lg transition-colors">
+                <Tiktok size={20} className="text-primary-foreground/60 hover:text-accent" />
               </a>
             </div>
           </div>
