@@ -8,7 +8,7 @@ const testimonials = [
     name: "Sarah Chen",
     role: "E-Commerce Founder",
     content:
-      "ETechExpertz transformed our store from struggling startup to $100k+ monthly revenue. Their strategic approach is unmatched.",
+      "OutsourceTechAutomations transformed our store from struggling startup to $100k+ monthly revenue. Their strategic approach is unmatched.",
     rating: 5,
   },
   {

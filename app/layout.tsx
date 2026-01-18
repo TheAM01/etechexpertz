@@ -4,6 +4,7 @@ import { Space_Grotesk, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import GlobalConfetti from "@/components/GlobalConfetti"
+import MouseGlow from "@/components/MouseGlow"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -12,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ETechExpertz | Digital Excellence & Business Solutions",
+  title: "OutsourceTechAutomations | Digital Excellence & Business Solutions",
   description:
     "Premium e-commerce and digital solutions. Product hunting, marketing strategy, and business execution for modern enterprises.",
   generator: "v0.app",
@@ -38,10 +39,10 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 5,
     userScalable: true,
-    themeColor: [
-      { media: "(prefers-color-scheme: light)", color: "#fafaf8" },
-      { media: "(prefers-color-scheme: dark)", color: "#0f0f0d" },
-    ],
+    // themeColor: [
+    //   { media: "(prefers-color-scheme: light)", color: "#fafaf8" },
+    //   { media: "(prefers-color-scheme: dark)", color: "#0f0f0d" },
+    // ],
   },
 }
 
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className={`${spaceGrotesk.className} antialiased`}>
         {children}
         <GlobalConfetti />
+        <MouseGlow/>
         <Analytics />
       </body>
     </html>

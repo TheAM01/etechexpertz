@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
+          className="leading-10 sm:leading-tight text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
         >
           Your E-Commerce
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent to-foreground">
@@ -64,7 +64,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-lg sm:text-xl text-foreground/60 mb-8 max-w-2xl mx-auto leading-relaxed"
+          className="text-base sm:text-xl text-foreground/60 mb-8 max-w-2xl mx-auto leading-relaxed"
         >
           Complete digital transformation and e-commerce solutions. From product discovery to fulfillment, we handle
           everything with precision and excellence.
@@ -97,7 +97,7 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-foreground/40 flex flex-col items-center"
+        className="hidden md:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 text-foreground/40 flex-col items-center"
       >
         <div className="text-xs font-medium mb-2">Scroll to explore</div>
         <div className="w-6 h-10 border-2 border-current rounded-full flex justify-center">

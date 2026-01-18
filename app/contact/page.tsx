@@ -67,7 +67,7 @@ export default function Contact() {
         {
             icon: Mail,
             label: "Email",
-            value: "support@etechexpertz.com",
+            value: "contact@outsourcetechautomations.com",
             action: "Send Email",
         },
         {

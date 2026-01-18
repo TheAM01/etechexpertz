@@ -124,7 +124,7 @@ export default function About() {
                             className="space-y-6 text-lg text-foreground/75 leading-relaxed"
                         >
                             <p>
-                                At ETechExpertz, we're driven by a singular mission: empowering entrepreneurs to build thriving online
+                                At OutsourceTechAutomations, we're driven by a singular mission: empowering entrepreneurs to build thriving online
                                 businesses without the overwhelming complexity. We recognize that managing an e-commerce venture while
                                 juggling multiple responsibilities is exhausting. That's where we step in.
                             </p>
@@ -140,7 +140,7 @@ export default function About() {
                                 customer relationships.
                             </p>
                             <p>
-                                When you partner with ETechExpertz, you're not just getting a service provider—you're gaining a
+                                When you partner with OutsourceTechAutomations, you're not just getting a service provider—you're gaining a
                                 strategic partner committed to your success. We handle the technical intricacies, the market research,
                                 the optimization, and the execution. You focus on your vision. Together, we make it reality.
                             </p>
