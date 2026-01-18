@@ -7,6 +7,7 @@ import ServiceHero from "@/components/service-hero"
 import Testimonials from "@/components/testimonials"
 import { motion } from "framer-motion"
 import { ArrowRight, Zap } from "lucide-react"
+import DashboardCarousel, { DashboardSlide } from "@/components/DashboardCarousel"
 
 export default function eBayManagement() {
     const [isDark, setIsDark] = useState(true);
@@ -66,6 +67,27 @@ export default function eBayManagement() {
             icon: "📊",
         },
     ]
+
+    const slides: DashboardSlide[] = [
+        {
+            id: 1,
+            title: "Babar",
+            image: '/ebay/ebay-babar.jpeg',
+            description: "",
+        },
+        {
+            id: 2,
+            title: "Alaister",
+            image: '/ebay/ebay-alaister.jpeg',
+            description: "",
+        },
+        {
+            id: 3,
+            title: "",
+            image: '/ebay/ebay.jpeg',
+            description: "",
+        },
+    ];
 
     const highlights = [
         "20% increase in click-through rates with optimized listings",
@@ -169,6 +191,10 @@ export default function eBayManagement() {
                             ))}
                         </div>
                     </div>
+                </section>
+
+                <section className="relative py-20 sm:py-32 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
+                    <DashboardCarousel slides={slides}/>
                 </section>
 
                 {/* CTA Section */}

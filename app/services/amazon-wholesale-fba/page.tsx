@@ -7,6 +7,7 @@ import ServiceHero from "@/components/service-hero"
 import Testimonials from "@/components/testimonials"
 import { motion } from "framer-motion"
 import { CheckCircle, ArrowRight } from "lucide-react"
+import DashboardCarousel, { DashboardSlide } from "@/components/DashboardCarousel"
 
 export default function AmazonWholesaleFBA() {
     const [isDark, setIsDark] = useState(true);
@@ -71,6 +72,45 @@ export default function AmazonWholesaleFBA() {
             ],
         },
     ]
+
+    const slides: DashboardSlide[] = [
+        {
+            id: 1,
+            title: "",
+            image: '/amazon/amazon1.jpeg',
+            description: "",
+        },
+        {
+            id: 2,
+            title: "",
+            image: '/amazon/amazon2.jpeg',
+            description: "",
+        },
+        {
+            id: 3,
+            title: "",
+            image: '/amazon/amazon3.jpeg',
+            description: "",
+        },
+        {
+            id: 4,
+            title: "",
+            image: '/amazon/amazon4.jpeg',
+            description: "",
+        },
+        {
+            id: 5,
+            title: "",
+            image: '/amazon/amazon5.jpeg',
+            description: "",
+        },
+        {
+            id: 6,
+            title: "",
+            image: '/amazon/amazon6.jpeg',
+            description: "",
+        },
+    ];
 
     return (
         <div className={isDark ? "dark" : ""}>
@@ -182,6 +222,9 @@ export default function AmazonWholesaleFBA() {
                             ))}
                         </div>
                     </div>
+                </section>
+                <section className="relative py-20 sm:py-32">
+                    <DashboardCarousel slides={slides}/>
                 </section>
 
                 {/* Testimonials */}

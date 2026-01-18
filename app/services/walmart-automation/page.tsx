@@ -7,6 +7,7 @@ import ServiceHero from "@/components/service-hero"
 import Testimonials from "@/components/testimonials"
 import { motion } from "framer-motion"
 import { CheckCircle, ArrowRight } from "lucide-react"
+import DashboardCarousel, { DashboardSlide } from "@/components/DashboardCarousel"
 
 export default function WalmartAutomation() {
     const [isDark, setIsDark] = useState(true);
@@ -106,6 +107,45 @@ export default function WalmartAutomation() {
             items: ["Logo Design", "Website Development", "Domain & Hosting", "Email Setup"],
         },
     ]
+
+    const slides: DashboardSlide[] = [
+        {
+            id: 1,
+            title: "",
+            image: '/walmart/walmart1.jpeg',
+            description: "",
+        },
+        {
+            id: 2,
+            title: "",
+            image: '/walmart/walmart2.jpeg',
+            description: "",
+        },
+        {
+            id: 3,
+            title: "",
+            image: '/walmart/walmart3.jpeg',
+            description: "",
+        },
+        {
+            id: 4,
+            title: "",
+            image: '/walmart/walmart4.jpeg',
+            description: "",
+        },
+        {
+            id: 5,
+            title: "",
+            image: '/walmart/walmart5.jpeg',
+            description: "",
+        },
+        {
+            id: 6,
+            title: "",
+            image: '/walmart/walmart6.jpeg',
+            description: "",
+        },
+    ];
 
     return (
         <div className={isDark ? "dark" : ""}>
@@ -239,6 +279,10 @@ export default function WalmartAutomation() {
                             ))}
                         </div>
                     </div>
+                </section>
+
+                <section className="relative py-20 sm:py-32 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
+                    <DashboardCarousel slides={slides}/>
                 </section>
 
                 {/* CTA Section */}

@@ -56,7 +56,7 @@ export default function RootLayout({
       <body className={`${spaceGrotesk.className} antialiased`}>
         {children}
         <GlobalConfetti />
-        <MouseGlow/>
+        {/* <MouseGlow/> */}
         <Analytics />
       </body>
     </html>
