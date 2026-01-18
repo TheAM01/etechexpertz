@@ -31,6 +31,9 @@ export default function MouseGlow() {
     // Don't render on touch devices
     if (isTouchDevice) return null
 
+
+
+    
     return (
         <div
             className="pointer-events-none fixed inset-0 z-50"
