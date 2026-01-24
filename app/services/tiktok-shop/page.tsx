@@ -7,6 +7,7 @@ import ServiceHero from "@/components/service-hero"
 import Testimonials from "@/components/testimonials"
 import { motion } from "framer-motion"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
+import DashboardCarousel, { DashboardSlide } from "@/components/DashboardCarousel"
 
 export default function TikTokShop() {
     const [isDark, setIsDark] = useState(true);
@@ -116,7 +117,34 @@ export default function TikTokShop() {
         "Paid promotional tools setup",
         "Platform management charges",
         "LLC creation fees",
-    ]
+    ];
+
+    const slides: DashboardSlide[] = [
+        {
+            id: 1,
+            title: "Babar",
+            image: '/tiktok/tiktok1.jpeg',
+            description: "",
+        },
+        {
+            id: 2,
+            title: "Alaister",
+            image: '/tiktok/tiktok2.jpeg',
+            description: "",
+        },
+        {
+            id: 3,
+            title: "",
+            image: '/tiktok/tiktok3.jpeg',
+            description: "",
+        },
+        {
+            id: 4,
+            title: "Babar",
+            image: '/tiktok/tiktok4.jpeg',
+            description: "",
+        }
+    ];
 
     return (
         <div className={isDark ? "dark" : ""}>
@@ -215,6 +243,10 @@ export default function TikTokShop() {
                             ))}
                         </div>
                     </div>
+                </section>
+
+                <section className="relative py-20 sm:py-32 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
+                    <DashboardCarousel slides={slides}/>
                 </section>
 
                 {/* Package Section */}

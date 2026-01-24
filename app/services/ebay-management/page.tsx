@@ -87,6 +87,24 @@ export default function eBayManagement() {
             image: '/ebay/ebay.jpeg',
             description: "",
         },
+        {
+            id: 4,
+            title: "Babar",
+            image: '/ebay/ebay2.jpeg',
+            description: "",
+        },
+        {
+            id: 5,
+            title: "Alaister",
+            image: '/ebay/3.jpeg',
+            description: "",
+        },
+        {
+            id: 6,
+            title: "",
+            image: '/ebay/ebay4.jpeg',
+            description: "",
+        },
     ];
 
     const highlights = [

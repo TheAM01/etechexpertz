@@ -88,12 +88,12 @@ export default function DashboardCarousel({slides}: {slides: DashboardSlide[]}) 
     }
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-4 py-12">
+        <div className="w-full max-w-7xl mx-auto px-4 py-12">
             <div className="flex flex-col items-center gap-8">
                 {/* Laptop Container */}
                 <div className="w-full perspective">
                     {/* Laptop Frame */}
-                    <div className="relative bg-gradient-to-b from-slate-900 to-slate-800 dark:from-slate-900 dark:to-slate-950 rounded-t-3xl shadow-2xl p-3 border border-slate-700">
+                    <div className="relative bg-gradient-to-b from-slate-900 to-slate-800 dark:from-slate-900 dark:to-slate-950 rounded-3xl shadow-2xl p-3 border border-slate-700">
                         {/* Top Bar with macOS Controls */}
                         <div className="flex items-center justify-between bg-gradient-to-r from-slate-800 to-slate-900 rounded-t-2xl px-4 py-3 mb-2">
                             <div className="flex items-center gap-2.5">

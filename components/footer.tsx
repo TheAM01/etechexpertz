@@ -17,10 +17,24 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-card/50 dark:bg-black/50 border-t border-border backdrop-blur-sm py-16 texom">
+    <footer className="relative bg-card/50 dark:bg-black/50 border-t border-border backdrop-blur-sm py-16 texture-cartographer">
       <div className="absolute inset-0 texture-graphy opacity-5 dark:opacity-10" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute top-0 left-10 bottom-0 md:flex flex-row hidden">
+        <div className="h-full bg-accent w-2.5 texture-axiom"></div>
+        <div className="h-full bg-border w-2.5 texture-axiom"></div>
+        <div className="h-full bg-muted w-2.5 texture-axiom"></div>
+        <div className="h-full bg-border w-2.5 texture-axiom"></div>
+        <div className="h-full bg-accent w-2.5 texture-axiom mb-20"></div>
+      </div>
+
+      <div className="w-full bg-accent h-2.5 texture-escheresque"></div>
+      <div className="w-full bg-border h-2.5 texture-escheresque"></div>
+      <div className="w-full bg-muted h-2.5 texture-escheresque"></div>
+      <div className="w-full bg-border h-2.5 texture-escheresque"></div>
+      <div className="w-full bg-accent h-2.5 texture-escheresque mb-20"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-5 hover:bg-accent/7 duration-2000 ">
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -33,7 +47,7 @@ export default function Footer() {
                 </span>
               </Link>
             </div>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed">
+            <p className="text-primary-foreground/60 text-sm leading-relaxed dark:text-white">
               Transforming e-commerce businesses into profitable powerhouses with strategic excellence.
             </p>
           </div>

@@ -110,6 +110,42 @@ export default function AmazonWholesaleFBA() {
             image: '/amazon/amazon6.jpeg',
             description: "",
         },
+        {
+            id: 7,
+            title: "",
+            image: '/amazon/amazon7.jpeg',
+            description: "",
+        },
+        {
+            id: 8,
+            title: "",
+            image: '/amazon/amazon8.jpeg',
+            description: "",
+        },
+        {
+            id: 9,
+            title: "",
+            image: '/amazon/amazon9.jpeg',
+            description: "",
+        },
+        {
+            id: 10,
+            title: "",
+            image: '/amazon/amazon10.jpeg',
+            description: "",
+        },
+        {
+            id: 11,
+            title: "",
+            image: '/amazon/amazon11.jpeg',
+            description: "",
+        },
+        {
+            id: 12,
+            title: "",
+            image: '/amazon/amazon12.jpeg',
+            description: "",
+        },
     ];
 
     return (
